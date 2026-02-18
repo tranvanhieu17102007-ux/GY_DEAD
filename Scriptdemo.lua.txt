@@ -1,0 +1,130 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "GY_DEAD",
+         Animation = "Youtube: tổng hợp của GY"
+         },
+        Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"1234"},
+        Notifi = {
+        Notifications = true,
+        CorrectKey = "Running the Script...",
+       Incorrectkey = "The key is incorrect",
+       CopyKeyLink = "Copied to Clipboard"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=6421296789",
+       Size = {60, 60},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Script Farm"})
+     local Tab2o = MakeTab({Name = "Script kaitun"})
+     local Tab3o = MakeTab({Name = "auto bouty"})
+     
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "Xeter V4",
+    Callback = function()
+	  getgenv().Version = "V4"
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TlDinhKhoi/Xeter/refs/heads/main/Main.lua"))()
+  end
+  })
+  
+  AddButton(Tab1o, {
+     Name = "QuantumOnyx",
+    Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()
+  end
+  })
+  
+  AddButton(Tab2o, {
+     Name = "Hinishi kaitun",
+    Callback = function()
+	  _G.Hinishi_Hub_Kaitun_Blox_Fruits = {
+    ["Misc"] = {
+        ["Hop If Admin Join"] = true,
+        ["Unlock Dough Chip"] = true,
+        ["Auto Aura RGB"] = true,
+        ["Auto Pull Lever"] = true,
+        ["Big Hitbox"] = true
+    },
+    ["Upgrade Race"] = {
+        ["Race"] = {"Human","Fishman","Skypiea","Mink"},
+        ["Upgrade Race V3"] = true,
+        ["Lock Race Select"] = true
+    },
+    ["Fighting Styles"] = {
+        ["Melee V2"] = true,
+        ["Godhuman"] = true
+    },
+    ["Swords"] = {
+        ["True Triple Katana"] = true,
+        ["Cursed Dual Katana"] = true,
+        ["Shark Anchor"] = true,
+        ["Saber"] = true,
+        ["Midnight Blade"] = true,
+        ["Shisui"] = true,
+        ["Saddi"] = true,
+        ["Wando"] = true,
+        ["Yama"] = true,
+        ["Koko"] = false,
+        ["Rengoku"] = true,
+        ["Canvander"] = true,
+        ["Buddy Sword"] = true,
+        ["Twin Hooks"] = true,
+        ["Spikey Trident"] = true,
+        ["Hallow Scryte"] = true,
+        ["Dark Dagger"] = true,
+        ["Tushita"] = true
+    },
+    ["Guns"] = {
+        ["Soul Guitar"] = true,
+        ["Kabucha"] = true,
+        ["Acidum Rifle"] = true,
+        ["Serpent Bow"] = true
+    },
+    ["BloxFruits"] = {
+        ["Sub Fruits"] = {"Rocket-Rocket","Spin-Spin"},
+        ["Safe Fruits"] = {"Dragon-Dragon","T-Rex-T-Rex","Kitsune-Kitsune"}
+    },
+    ["Mastery"] = {
+        ["Blox Fruit"] = true,
+        ["Fighting Styles"] = true,
+        ["Swords"] = true
+    },
+    ["Settings"] = {
+        ["Tween Speed"] = 300,
+        ["Fix Lag"] = true,
+        ["Safe Mode"] = false
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-Hinishi/Hinishi-Hub/refs/heads/main/Kaitun"))()
+  end
+  })
+  
+  AddButton(Tab2o, {
+     Name = "Arya kaitun",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+  end
+  })
